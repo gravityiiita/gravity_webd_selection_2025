@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Fetcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Profile Fetcher</h1>
+
+    <form id="searchForm">
+      <input type="text" id="usernameInput" placeholder="Enter GitHub username" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="error" class="error"></div>
+
+    <div id="profile" class="profile hidden"></div>
+
+    <h2>Search History</h2>
+    <ul id="history"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

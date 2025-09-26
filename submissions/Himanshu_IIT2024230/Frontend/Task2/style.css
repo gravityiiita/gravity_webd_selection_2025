@@ -1,0 +1,21 @@
+:root{--bg:#f3f4f6;--card:#fff;--accent:#0ea5e9;--danger:#ef4444;--success:#10b981}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial;margin:0;background:var(--bg);color:#0f172a}
+.wrap{max-width:420px;margin:60px auto;padding:16px}
+.form{background:var(--card);padding:22px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
+.form h1{margin:0 0 12px;font-size:1.4rem}
+label{display:block;margin-top:12px;font-weight:600}
+input[type="email"],input[type="password"]{width:100%;padding:10px 12px;margin-top:6px;border-radius:8px;border:1px solid #e6e9ef;font-size:0.95rem;transition:border-color .12s,box-shadow .12s}
+input:focus{outline:none;border-color:var(--accent);box-shadow:0 6px 20px rgba(14,165,233,0.08)}
+.pwwrap{display:flex;gap:8px;align-items:center}
+.pwwrap button{background:transparent;border:1px solid #e6e9ef;padding:8px 10px;border-radius:8px;cursor:pointer}
+.feedback{height:18px;margin:6px 0 0;font-size:0.85rem;color:#6b7280}
+.feedback.error{color:var(--danger)}
+.feedback.ok{color:var(--success)}
+.primary{width:100%;margin-top:18px;padding:10px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}
+.primary:disabled{opacity:0.6;cursor:not-allowed}
+
+
+/* small animation */
+input{transition:transform .12s ease}
+input:invalid{transform:translateY(0)}

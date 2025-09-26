@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Task 2 — Signup Form</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="wrap">
+<form id="signup" class="form" novalidate>
+<h1>Sign up</h1>
+
+
+<label for="email">Email</label>
+<input id="email" name="email" type="email" autocomplete="email" required />
+<p class="feedback" id="emailFeedback"></p>
+
+
+<label for="password">Password</label>
+<div class="pwwrap">
+<input id="password" name="password" type="password" autocomplete="new-password" required />
+<button type="button" id="togglePw" aria-label="Toggle password visibility">Show</button>
+</div>
+<p class="feedback" id="passwordFeedback"></p>
+
+
+<label for="confirm">Confirm Password</label>
+<input id="confirm" name="confirm" type="password" autocomplete="new-password" required />
+<p class="feedback" id="confirmFeedback"></p>
+
+
+<button id="submitBtn" type="submit" class="primary">Create account</button>
+</form>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

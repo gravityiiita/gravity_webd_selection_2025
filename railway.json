@@ -1,0 +1,7 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd submissions/Himanshu_IIT2024230/backend && npm install",
+    "startCommand": "cd submissions/Himanshu_IIT2024230/backend && npm start"
+  }
+}
