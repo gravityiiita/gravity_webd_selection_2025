@@ -1,0 +1,71 @@
+ *{
+  padding:0px;
+  margin:0px;
+ }
+ 
+ body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6fb;
+    }
+    .container {
+      padding: 60px;
+    }
+    .grid {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(20,40,80,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding:  24px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 6px 24px rgba(20, 40, 80, 0.61);
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.403);
+    }
+    .name {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #212851;
+      margin-bottom: 6px;
+    }
+    .role {
+      color: #6648c2;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .desc {
+      color: #444c6d;
+      text-align: center;
+      font-size: 0.97rem;
+    }

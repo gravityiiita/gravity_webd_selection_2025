@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Github Profile Fetcher</title>
+  </head>
+  <body>
+    <div class="background-blob blob1"></div>
+    <div class="background-blob blob2"></div>
+    <div class="background-blob blob3"></div>
+
+    <h1 class="head">Github Profile Fetcher</h1>
+
+    <div class="input-container">
+      <input
+        type="text"
+        id="username-input"
+        placeholder="Enter Github Username and press Enter"
+        class="input-field"
+      />
+      <button class="Btn">Search</button>
+    </div>
+    
+    <div id="status-message" class="status"></div>
+
+    <div class="InfoBox hidden">
+      <img src="" alt="User avatar" class="avatar" id="avatar" />
+      <div class="user-info">
+        <p><b>Full Name:</b> <span id="name">N/A</span></p>
+        <p><b>Username:</b> <span id="username-display">N/A</span></p>
+        <p><b>Bio:</b> <span id="bio">N/A</span></p>
+        <p><b>Public Repos:</b> <span id="repos">N/A</span></p>
+        
+        <p><b>Followers:</b> <span id="followers">N/A</span></p>
+        <p><b>Following:</b> <span id="following">N/A</span></p>
+        <p><b>Company:</b> <span id="company">N/A</span></p>
+        <p>
+          <b>Profile Link:</b>
+          <a href="#" target="_blank" id="profile-link">N/A</a>
+        </p>
+        <p><b>Joined:</b> <span id="created-at">N/A</span></p>
+      </div>
+      <h2 class="repohead"></h2>
+      <div class="Repo-container">
+        
+          
+          
+          
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
