@@ -1,0 +1,87 @@
+/* Body & Background */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Soft gradient background for professional look */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+/* Team Title */
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+/* Card Container */
+#team-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card Styling */
+.card-custom {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+/* Card Image */
+.card-img-top {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin: 20px auto 15px auto;
+  display: block;
+}
+
+/* Card Title */
+.card-title {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Card Text */
+.card-text {
+  color: #e0e0e0;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.card-custom button {
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background: #ff758c;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-custom button:hover {
+  background: #ff7eb3;
+  transform: scale(1.05);
+}
